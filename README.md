@@ -1,23 +1,21 @@
-# celestial-bodies-database
-this project, you will build a database of celestial bodies using PostgreSQL.
-Rules for celestial bodies database
-Let’s look at the guidelines we need to follow for this project in order to build acceptable tables.
+Projet : Base de Données des Corps Célestes avec PostgreSQL
+Règles pour la base de données des corps célestes
+Voici les lignes directrices à suivre pour ce projet afin de créer des tables acceptables.
 
-These are the requirements that we must fulfill while creating the tables:
-
-The database should have at least 5 tables.
-There must be a table of the galaxy (≥ 6 rows), star (≥ 6 rows), planet (≥ 12 rows), and moon (≥20 rows).
-Each table should have at least 3 rows and 3 columns.
-The galaxy, star, planet, and moon tables should each have at least 5 columns.
-A primary key should be included in each table. The naming standard for primary key columns should be table_name_id. The moon table, for example, should include a primary key column called moon_id.
-Each table should have a name column.
-The INT data type must be used in at least two columns that are not the primary or foreign keys.
-The NUMERIC data type must be used at least once.
-The TEXT data type must be used at least once.
-The BOOLEAN data type must be used in at least two columns.
-At least 2 columns per table should not accept NULL values.
-At least 1 column from each table should be required to be UNIQUE.
-Each star should have a foreign key that references one of the rows in galaxy.
-Each planet should have a foreign key that references one of the rows in star.
-Each moon should have a foreign key that references one of the rows in planet.
-Each foreign key column should have the same name as the column it is referencing.
+Exigences à remplir lors de la création des tables :
+La base de données doit contenir au moins 5 tables.
+Il doit y avoir une table pour les galaxies (≥ 6 lignes), les étoiles (≥ 6 lignes), les planètes (≥ 12 lignes) et les lunes (≥ 20 lignes).
+Chaque table doit avoir au moins 3 lignes et 3 colonnes.
+Les tables des galaxies, étoiles, planètes et lunes doivent chacune avoir au moins 5 colonnes.
+Une clé primaire doit être incluse dans chaque table. La norme de dénomination pour les colonnes de clé primaire doit être nom_table_id. Par exemple, la table des lunes doit inclure une colonne de clé primaire appelée lune_id.
+Chaque table doit avoir une colonne nom.
+Le type de données INT doit être utilisé dans au moins deux colonnes qui ne sont pas des clés primaires ou étrangères.
+Le type de données NUMERIC doit être utilisé au moins une fois.
+Le type de données TEXT doit être utilisé au moins une fois.
+Le type de données BOOLEAN doit être utilisé dans au moins deux colonnes.
+Au moins 2 colonnes par table ne doivent pas accepter de valeurs NULL.
+Au moins une colonne de chaque table doit être unique.
+Chaque étoile doit avoir une clé étrangère qui référence une des lignes de la table des galaxies.
+Chaque planète doit avoir une clé étrangère qui référence une des lignes de la table des étoiles.
+Chaque lune doit avoir une clé étrangère qui référence une des lignes de la table des planètes.
+Chaque colonne de clé étrangère doit avoir le même nom que la colonne à laquelle elle fait référence.
